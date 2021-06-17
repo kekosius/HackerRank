@@ -5,7 +5,7 @@ public class Task6 {
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
         int result;
-        String output = new String();
+        String output;
 
         input.close();
 

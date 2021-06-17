@@ -20,7 +20,7 @@ public class Task7 {
 
             for (int j = 0; j < n; j++) {
                 cur+=Math.pow(2,j)*b;
-                System.out.printf(cur + " ");
+                System.out.print(cur + " ");
             }
 
             System.out.println();

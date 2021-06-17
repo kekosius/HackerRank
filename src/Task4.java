@@ -8,12 +8,10 @@ import java.util.Scanner;
 public class Task4 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        String inputString = new String();
+        String inputString;
 
         int inputInteger = input.nextInt();
-        inputString = input.nextLine();
         double inputDouble = input.nextDouble();
-        inputString = input.nextLine();
         inputString = input.nextLine();
 
 

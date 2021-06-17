@@ -9,8 +9,8 @@ import java.util.*;
 
 public class Task3 {
     public static void main(String[] args){
-        String wierd = new String();
-        String notWierd = new String();
+        String wierd;
+        String notWierd;
         notWierd = "Not Weird";
         wierd = "Weird";
         Scanner input = new Scanner(System.in);
