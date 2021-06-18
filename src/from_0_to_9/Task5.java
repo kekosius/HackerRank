@@ -1,3 +1,5 @@
+package from_0_to_9;
+
 import java.util.Scanner;
 
 //In each line of output there should be two columns:

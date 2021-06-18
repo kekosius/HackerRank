@@ -1,3 +1,5 @@
+package from_0_to_9;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 

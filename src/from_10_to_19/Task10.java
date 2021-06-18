@@ -1,3 +1,5 @@
+package from_10_to_19;
+
 import java.util.Scanner;
 
 //Complete the given code so that it outputs the area of a parallelogram with breadth B and height H.

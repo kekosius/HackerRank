@@ -1,3 +1,5 @@
+package from_0_to_9;
+
 import java.util.*;
 
 //Given an integer, n, perform the following conditional actions:

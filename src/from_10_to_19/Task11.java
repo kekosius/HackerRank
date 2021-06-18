@@ -1,3 +1,5 @@
+package from_10_to_19;
+
 import java.util.Scanner;
 
 //You are given an integer n, you have to convert it into a string.

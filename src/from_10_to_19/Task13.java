@@ -1,3 +1,5 @@
+package from_10_to_19;
+
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.Locale;

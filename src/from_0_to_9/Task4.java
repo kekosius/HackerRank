@@ -1,3 +1,5 @@
+package from_0_to_9;
+
 import java.util.Scanner;
 
 //There are three lines of output:

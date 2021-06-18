@@ -1,4 +1,4 @@
-
+package from_0_to_9;
 //We use the integers a, b, and x to create the following series:
 //(a + 2^0 * b), (a + 2^0 * b + 2^1 * b),...,(a + 2^0 * b + 2^1 * b + ... + 2^n-1 * b)
 //You are given q queries in the form of a, b, and n.
