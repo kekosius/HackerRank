@@ -15,8 +15,8 @@ public class Task18 {
         input.close();
         s = s.trim();
 
-        String delim = "[ !,?._'@]+";
-        s = s.replaceAll(delim, " ");
+        String regex = "[ !,?._'@]+";
+        s = s.replaceAll(regex, " ");
         while (s.contains("  ")){
             s = s.replace("  ", " ");
         }
