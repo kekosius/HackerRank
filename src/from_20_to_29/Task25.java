@@ -33,6 +33,14 @@ public class Task25 {
 
 
 class Student {
+    public double getCgpa() {
+        return cgpa;
+    }
+
+    public int getId() {
+        return id;
+    }
+
     int id;
     String name;
     double cgpa;
@@ -65,9 +73,12 @@ class Student {
 
 class Priorities {
     public List<Student> getStudents(List<String> events){
-        Comparator<Student> studentComparator = Comparator.comparingInt(Student::hashCode);
 
-        Queue<Student> priorityQueue = new PriorityQueue<>(5, studentComparator);
+        Queue<Student> priorityQueue = new PriorityQueue<>(
+                Comparator.comparing(Student::getCgpa).reversed()
+                        .thenComparing(Student::getName)
+                        .thenComparing(Student::getId)
+        );
         String[] command;
 
         for (String event : events) {
@@ -76,7 +87,7 @@ class Priorities {
             switch (command[0]) {
                 case ("ENTER") -> {
                     String name = command[1];
-                    double cgpa = Integer.parseInt(command[2]);
+                    double cgpa = Double.parseDouble(command[2]);
                     int id = Integer.parseInt(command[3]);
                     priorityQueue.add(new Student(name, cgpa, id));
                 }
@@ -85,7 +96,8 @@ class Priorities {
         }
 
         List<Student> result = new ArrayList<>();
-        for (int i = 0; i < priorityQueue.size(); i++) {
+        int loops = priorityQueue.size();
+        for (int i = 0; i < loops; i++) {
             result.add(priorityQueue.poll());
         }
         return result;
