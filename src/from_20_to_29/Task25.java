@@ -69,19 +69,6 @@ class Student {
         return name;
     }
 
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Student student = (Student) o;
-        return id == student.id && Double.compare(student.cgpa, cgpa) == 0 && Objects.equals(name, student.name);
-    }
-//Remake hashCode!!
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, name, cgpa);
-    }
 }
 
 class Priorities {
